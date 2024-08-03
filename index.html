@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>CasperBOT</title>
+ 
+  </head>
+  <body>
+    <!--Nav Container-->
+    <nav class="text-center justify-center flex mt-4">
+      <img src="/images/logo.png" alt="" class="h-[90px]  animate-pulse">
+      <h1 class=" text-4xl font-bold mr-auto  pt-5 ">Casper BOT</h1>
+       <!--Large Options-->
+        <a href="#about" class="hidden lg:block text-white font-Jua text-3xl mt-10 hover:underline ">About</a>
+        <a href="#commands" class="hidden lg:block text-white font-Jua text-3xl  mt-10 px-3 hover:underline">Commands</a>
+        <a href="#download" class="hidden lg:block text-white font-Jua text-3xl  mt-10 hover:underline">Download</a>
+        <!-- hamburger menu-->
+        <button
+          id="menu-btn"
+          class="block hamburger lg:hidden focus:outline-none mt-6 px-6 ml-auto"
+          type="button"
+        >
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+      </div>
+      <!-- display mobile menu-->
+      <div
+        id="menu"
+        class="absolute hidden p-6 rounded-lg bg-darkViolet left-6 right-6 top-20 z-100"
+      >
+        <div
+          class="flex flex-col items-center justify-center w-full space-y-6 font-bold text-white rounded-sm bg-black py-5 rounded-md"
+        >
+          <a href="#about" class="w-full text-center">About</a>
+          <a href="#commands" class="w-full text-center">Commands</a>
+          <a href="#download" class="w-full text-center">Installation</a>
+          <a href="https://github.com/SonnyBateman/CasperBot" target="_blank" class="w-full pt-6 border-t border-gray-400 text-center"
+            >Github</a
+          >
+
+        </div>
+      </div>
+      
+    </nav>
+    <!--White line-->
+    <div class="w-[100%] bg-white ml-auto h-2"></div>
+    <!--real div-->
+    <div id="about" class="mt-20 ">
+      <h1 class="text-center ">What Is Casper Bot</h1>
+      <p class="px-10 pt-12 text-center lg:text-2xl lg:pt-24 lg:px-96 lg:text-3xl">Casper BOT is a discord BOT made using NODEJS that is OPEN SOURCE and has multiple features to bring life to your discord server, Such as ask AI, Meme Generator, Music Player, and other random commands.</p>
+    </div>
+        <!--White line-->
+        <div class="w-[100%] bg-white ml-auto h-2 mt-14"> </div>
+        <!--real div-->
+        <div id="commands" class="mt-20 flex flex-col lg:flex-row lg:items-start ">
+          <div class="lg:w-1/2 text-center lg:text-left ">
+              <h1 class="">What are the commands?</h1>
+              <p class="commands">Ask AI | /AI Then type your question</p> 
+              <p class="commands">Meme | /meme Get a random Meme</p> 
+              <p class="commands">HugMe | /HugMe You earned a Hug</p>
+              <p class="commands">CoinFlip | /CF Coin Flip</p>
+              <p class="commands">RPS | /RPS Rock Paper Scissors</p>
+              <p class="commands">Command List | /Help to see all Commands</p>
+              <p class="commands">Score | /Score to see your Total Score</p>
+          </div>
+          <img src="images/github.png" class="hidden lg:block lg:ml-auto rounded-xl w-full lg:w-1/2 lg:pt-24" alt="">
+      </div>
+       <!--White line-->
+       <div class="w-[100%] bg-white ml-auto h-2 mt-14"> </div>
+       <!--real div-->
+       <div class="mt-20 text-center" id="download">
+        <h1 class="">Where To Download</h1>
+        <p class="githubDesc">You can find the bot on my github you can upload this to a server to run 24/7 or host it of your desktop </p>
+        <p class="githubDesc">You can also find an installation guide on my GITHUB if you are confused on how to set it up </p>
+        
+        </div>
+        <div class="text-center justify-center flex mt-24">
+          <img class="h-32" src="/images/logo.png" alt="">
+        <button onclick="github()" class="mt-11 h-12 w-28 bg-green-400 text-white font-Jua text-2xl rounded-xl animate-bounce hover:h-14" >GITHUB</button>
+        
+        <img class="h-32 reverse" src="/images/logo.png" alt="">
+      </div>
+    <script src="script.js"></script>
+  </body>
+</html>
